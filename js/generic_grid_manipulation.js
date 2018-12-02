@@ -11,3 +11,7 @@ function initiateContainerDiv(selector,id,additionalClass="") {
     additionalClass+=" container";
     return addDiv(selector,id,additionalClass)
 }
+function createCenterBlock(selector,id,additionalClass="") {
+    additionalClass+=" center-block";
+    return addDiv(selector,id,additionalClass)
+}

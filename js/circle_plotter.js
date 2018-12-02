@@ -85,8 +85,4 @@ function plotIntoSquare(filteredData,size,circles) {
         .attr("cy",function (d,i) {
             return yScale(i%y_ct)
         })
-
-
-
-
 }

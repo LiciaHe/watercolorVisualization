@@ -10,10 +10,10 @@ function initController() {
  * @param duration
  * @param pinId
  */
-function makeOnePinScene(triggerID,duration,pinId,offset,controller) {
+function stay_for_a_while(triggerID,duration,pinId,offset,controller) {
     var scene = new ScrollMagic.Scene({triggerElement: "#"+triggerID, duration: duration,offset:offset})
         .setPin("#"+pinId)
-        .addIndicators({name:"1(duration:)"+duration})
+        // .addIndicators({name:"1(duration:)"+duration})
         .addTo(controller);
     return scene
 }

@@ -8,7 +8,9 @@
 function addCircles_for_update(selector) {
 
     window.circles=selector.selectAll("circle")
-        .data(window.filteredData)
+        .data(window.data["data"],function (d) {
+            return d.i
+        })
         .enter()
         .append("circle")
         .attr("cx",function (d) {
@@ -83,9 +85,9 @@ function calculateRectScale() {
         return
     }
     var size=window.data["size"];
-    var r=window.filteredData[0]["radius"];
+    var r=window.data["data"][0]["radius"];
     var x_ct=Math.floor(size[0]/(2*r));
-    var y_ct=Math.ceil(window.filteredData.length/x_ct);
+    var y_ct=Math.ceil(window.data["data"].length/x_ct);
     var y_height=y_ct*2*r;
     var yRange=[(size[1]-y_height)/2,(size[1]-y_height)/2+y_height];
     var xScale=d3.scaleBand()
@@ -100,8 +102,9 @@ function calculateRectScale() {
 }
 function diagonalSquare() {
     calculateRectScale();
-    window.circles.enter();
-    window.circles.exit();
+    window.circles.data(window.data["data"],function (d) {
+        return d.i
+    });
     window.circles
         .transition()
         .duration(5000)
@@ -118,41 +121,33 @@ function diagonalSquare() {
  */
 function indexSquare() {
     calculateRectScale();
-    console.log("index square");
     window.circles.transition()
         .duration(5000)
         .attr("cx",function (d,i) {
-            console.log(i,window.rectScale.xScale(i%window.rectScale.x_ct));
             return window.rectScale.xScale(i%window.rectScale.x_ct)
         })
         .attr("cy",function (d,i) {
-            return window.rectScale.yScale(Math.floor(i/rectScale.x_ct))
+            return window.rectScale.yScale(Math.floor(i/window.rectScale.x_ct))
         })
 }
 
 /**
  * initiate Filtered data
  */
-function initiateFilteredData() {
-    var filterLim = 20;
-    var filteredData=window.data["data"].filter(function (d) {
-        return arraySum([d.r, d.g, d.b]) > filterLim
-    });
-    return filteredData
-}
+
 function restoreOriginalDataOrder() {
     if (window.dataAltered){
-        window.filteredData = initiateFilteredData();
+        window.data["data"].sort(function (a,b) {return a.i-b.i });
         window.dataAltered=false
     }
 }
 
 function sortByRed() {
-    console.log(window.filteredData.slice(0,10));
-    window.filteredData.sort(function (a,b) {
+    console.log("Red");
+    console.log()
+    window.data["data"].sort(function (a,b) {
         return a.r - b.r
     });
     window.dataAltered=true;
-    console.log(window.filteredData.slice(0,10));
     diagonalSquare()
 }

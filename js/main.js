@@ -27,11 +27,10 @@ addTextToPanel(panels);
 d3.json(baseLoc+fileName,function (error,data) {
     if (error) throw error;
     window.data=data;
+
     var svg_width = $("#" + svgId + "_div").width();
     var svg_g = createSvg_withoutMargin(svgId + "_div", svg_width, innerHeight, svgId);
 
-
-    window.filteredData = initiateFilteredData();
     window.dataAltered=false;
     var imgLoc = baseLoc + sepNames[0].slice(0, sepNames[0].length - 3) + ".jpg";
     var imgId = "original_img";
@@ -43,7 +42,7 @@ d3.json(baseLoc+fileName,function (error,data) {
     var circle_g=svg_g.append("g")
         .attr("id","circle_g")
         .style("opacity",0);
-    var circles = addCircles_for_update(circle_g);
+    addCircles_for_update(circle_g);
     organizeTransform(svg_g, data, svgId + "_div");
     var controller = initController();
     $(function () {
@@ -51,9 +50,10 @@ d3.json(baseLoc+fileName,function (error,data) {
         transparentToZero(imgId, "panel_2", 0, window.innerHeight / 2, controller);
         transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
         startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,indexSquare);
-        // startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,indexSquare,diagonalSquare)
+        startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,indexSquare,diagonalSquare);
+        startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreOriginalDataOrder,sortByRed)
     });
-    // startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreOriginalDataOrder,sortByRed)
+
 
 });
 

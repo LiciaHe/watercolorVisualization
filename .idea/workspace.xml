@@ -4,40 +4,8 @@
     <list default="true" id="6d592887-fecf-45c3-81f7-9bdcf3fec431" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/data/mini_c (1)_20.json" afterPath="$PROJECT_DIR$/data/mini_c (1)_20.json" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (1)_20.svg" afterPath="$PROJECT_DIR$/data/mini_c (1)_20.svg" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (1)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (1)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (10)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (10)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (100)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (100)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (102)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (102)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (103)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (103)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (104)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (104)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (105)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (105)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (106)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (106)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (107)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (107)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (108)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (108)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (109)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (109)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (11)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (11)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (110)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (110)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (111)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (111)_5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (112)_5.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (112)_5.svg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/js/circle_plotter.js" afterPath="$PROJECT_DIR$/js/circle_plotter.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/js/titleAndPanels.js" afterPath="$PROJECT_DIR$/js/titleAndPanels.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,7 +25,7 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="114">
-                  <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+                  <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -99,8 +67,8 @@
           <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+                <state relative-caret-position="594">
+                  <caret line="146" column="16" lean-forward="false" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
                   <folding>
                     <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
                   </folding>
@@ -122,11 +90,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="696">
-                  <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                <state relative-caret-position="492">
+                  <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -192,14 +160,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3094">
-                  <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+                <state relative-caret-position="590">
+                  <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
                   <folding>
                     <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
-                    <element signature="n#!!block;n#addCircles_for_update#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -219,7 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addC</find>
       <find>fill</find>
       <find>WIDTH</find>
       <find>scrollM</find>
@@ -246,8 +212,10 @@
       <find>SQUARE</find>
       <find>h-100</find>
       <find>organize</find>
-      <find>filteredData</find>
       <find>filtered</find>
+      <find>filterEd</find>
+      <find>filteredData</find>
+      <find>window.data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -373,12 +341,12 @@
       <updated>1543710586633</updated>
       <workItem from="1543710588084" duration="14088000" />
       <workItem from="1543807001097" duration="14190000" />
-      <workItem from="1543873817037" duration="3016000" />
+      <workItem from="1543873817037" duration="4233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31294000" />
+    <option name="totallyTimeSpent" value="32511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
@@ -717,7 +685,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+          <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -759,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        <state relative-caret-position="594">
+          <caret line="146" column="16" lean-forward="false" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
           </folding>

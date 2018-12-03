@@ -3,3 +3,8 @@
 .h-20{height:20%}
 .h-80{height:80%}
 body{font-family: 'Gamja Flower', cursive;}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

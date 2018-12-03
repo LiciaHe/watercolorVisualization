@@ -76,3 +76,12 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/**
+ * Assume it's a file with a.ext, return [a, ext]
+ * @param fileWithExt
+ */
+function getFileName(fileWithExt) {
+    var i=fileWithExt.indexOf(".");
+    var l=[fileWithExt.slice(0,i),fileWithExt.slice(i+1)];
+    return l
+}

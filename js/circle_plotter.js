@@ -31,10 +31,14 @@ function addCircles_for_update(selector,data,filterLim) {
  * @param svg_g
  * @param data
  */
-function organizeTransform(svg_g,data) {
+function organizeTransform(svg_g,data,divId) {
     var wh=data["size"];
-    var windowWH=[window.innerWidth,window.innerHeight];
+    // var windowWH=[window.innerWidth,window.innerHeight];
+    var windowWH=[$("#"+divId).width(),window.innerHeight];
+
+
     var ratios=[windowWH[0]/wh[0],windowWH[1]/wh[1]];
+    // console.log(windowWH,divWidth);
     if (ratios[0]>ratios[1]){
         //shrink according to height, translate width
         var scaleRatio=ratios[1];

@@ -1,10 +1,18 @@
+.h-10{height:10%}
 .h-15{height:15%}
-.h-85{height:85%}
 .h-20{height:20%}
+.h-60{height:60%}
 .h-80{height:80%}
+.h-85{height:85%}
 body{font-family: 'Gamja Flower', cursive;}
 .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+.center_text{
+    text-align: center;
+}
+.gray_bg{
+    background-color: #f4f3ef;
 }

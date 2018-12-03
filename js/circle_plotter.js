@@ -6,6 +6,7 @@
  * @param attrs
  */
 function addCircles_for_update(selector,data,filterLim) {
+
     window.circles=selector.selectAll("circle")
         .data(data)
         .enter()
@@ -66,11 +67,24 @@ function initScale(size) {
  * @param filteredData
  * @param size
  */
-function plotIntoSquare(filteredData,size,circles) {
+function backToOriginalCircle(){
+    window.circles.transition()
+        .duration(5000)
+        .attr("cx",function (d) {
+            return d.cx
+         })
+        .attr("cy",function (d) {
+            return d.cy
+        })
+}
 
-    var r=filteredData[0]["radius"];
+function plotIntoSquare() {
+    console.log("square");
+    var size=window.data["size"];
+
+    var r=window.filteredData[0]["radius"];
     var x_ct=Math.floor(size[0]/(2*r));
-    var y_ct=Math.ceil(filteredData.length/x_ct);
+    var y_ct=Math.ceil(window.filteredData.length/x_ct);
     var y_height=y_ct*2*r;
     var yRange=[(size[1]-y_height)/2,(size[1]-y_height)/2+y_height];
     var xScale=d3.scaleBand()
@@ -82,7 +96,7 @@ function plotIntoSquare(filteredData,size,circles) {
         .domain(range(y_ct))
         .padding(0);
     // console.log(x_ct,xScale.domain(),xScale(50));
-    circles.transition()
+    window.circles.transition()
         .duration(5000)
         .attr("cx",function (d,i) {
             return xScale(i%x_ct)

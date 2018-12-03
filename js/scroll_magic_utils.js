@@ -4,6 +4,17 @@ function initController() {
     return controller
 }
 
+function initScene(elementId,triggerId,offset,duration,controller) {
+    return new ScrollMagic.Scene({triggerElement: "#"+triggerId,offset:offset,duration:duration}).addTo(controller)
+
+}
+function tweenScene(elementId,triggerId,offset,duration,controller,tween) {
+    var scene=initScene(elementId,triggerId,offset,duration,controller);
+    scene.setTween(tween);
+    return scene
+}
+
+
 /**
  * should be called after the window is ready
  * @param triggerID
@@ -21,13 +32,6 @@ function takeMeWithYou(pinId,triggerId,offset,controller) {
     var scene = new ScrollMagic.Scene({triggerElement: "#"+triggerId,offset:offset})
         .setPin("#"+pinId)
         // .addIndicators({name:"takeMe"})
-        .addTo(controller);
-    return scene
-}
-
-function tweenScene(elementId,triggerId,offset,duration,controller,tween) {
-    var scene=new ScrollMagic.Scene({triggerElement: "#"+triggerId,offset:offset,duration:duration})
-        .setTween(tween)
         .addTo(controller);
     return scene
 }
@@ -54,7 +58,28 @@ function transparentToZero(elementId,triggerId,offset,duration,controller) {
 }
 function transparentFromZero(elementId,triggerId,offset,duration,controller) {
     var opacityTween=TweenMax.fromTo("#"+elementId,1,{opacity:0},{opacity:1});
-    console.log(opacityTween);
-    scene=tweenScene(elementId,triggerId,offset,duration,controller,opacityTween);
-    scene.addIndicators({name:"opacity"})
+    var scene=tweenScene(elementId,triggerId,offset,duration,controller,opacityTween);
+    // scene.addIndicators({name:"opacity"})
+    return scene
+}
+
+function enterAndLeave(elementId,triggerId,offset,duration,controller,startFunction,endFunction) {
+    var scene=initScene(elementId,triggerId,offset,duration,controller)
+        .on("enter",function () {
+            startFunction()
+        })
+        .on("leave",function () {
+            endFunction()
+        })
+    return scene
+}
+function startAndEnd(elementId,triggerId,offset,duration,controller,startFunction,endFunction) {
+    var scene=initScene(elementId,triggerId,offset,duration,controller)
+        .on("start",function () {
+            startFunction()
+        })
+        .on("end",function () {
+            endFunction()
+        });
+    return scene
 }

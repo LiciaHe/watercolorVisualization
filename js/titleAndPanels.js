@@ -40,6 +40,9 @@ function addTextToPanel(panels) {
     //here's an watercolor I drew
     panels[0].append("<span class='vcenter'><h1>Another side project by Licia.</h1></span>");
     panels[1].append("<span class='vcenter'><h1>Here's an abstract watercolor painting.</h1></span>");
-    panels[2].append("<h1 class='vcenter'>To reduce complexity(web! animation!), let's convert it into colored dots.</h1>");
-    panels[3].append("<h1 class='vcenter'>Here's a way to transform the circle into a rectangle.</h1>")
+    panels[2].append("<h1 class='vcenter'>To reduce complexity (web! animation!), let's convert it into colored dots.</h1>");
+    panels[3].append("<h1 class='vcenter'>Here's a way to transform the circle into a rectangle.</h1>");
+    panels[4].append("<h1 class='vcenter'>And another way.</h1>");
+    panels[5].append("<h1 class='vcenter'>Fun things start to happen when we sort these dots. Let's see sort by how RED the dot is.</h1>");
+
 }

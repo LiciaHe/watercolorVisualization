@@ -6,7 +6,7 @@ var svgId="main_svg";
 var topDiv=createMainAndEdge();
 
 
-var panelCt=5;
+var panelCt=7;
 var content_expDiv=addDiv(topDiv[0],"content_exp",additionalClass="row");
 content_expDiv.height(panelCt*window.innerHeight);
 
@@ -30,11 +30,9 @@ d3.json(baseLoc+fileName,function (error,data) {
     var svg_width = $("#" + svgId + "_div").width();
     var svg_g = createSvg_withoutMargin(svgId + "_div", svg_width, innerHeight, svgId);
 
-    var filterLim = 20;
-    window.filteredData = data["data"].filter(function (d) {
-        return arraySum([d.r, d.g, d.b]) > filterLim
-    });
-    // svg_div.append('<img src="'+(baseLoc+sepNames[0].slice(0,sepNames[0].length-3)+".jpg")+'">');
+
+    window.filteredData = initiateFilteredData();
+    window.dataAltered=false;
     var imgLoc = baseLoc + sepNames[0].slice(0, sepNames[0].length - 3) + ".jpg";
     var imgId = "original_img";
     d3.select("#"+svgId)
@@ -45,20 +43,17 @@ d3.json(baseLoc+fileName,function (error,data) {
     var circle_g=svg_g.append("g")
         .attr("id","circle_g")
         .style("opacity",0);
-    var circles = addCircles_for_update(circle_g, filteredData, filterLim);
+    var circles = addCircles_for_update(circle_g);
     organizeTransform(svg_g, data, svgId + "_div");
     var controller = initController();
     $(function () {
         takeMeWithYou(svgId, "panel_1", window.innerHeight / 2, controller);
         transparentToZero(imgId, "panel_2", 0, window.innerHeight / 2, controller);
         transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
-        startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,diagonalSquare)
-
-        //
-        // initScale(data["size"]);
-        // //
-        // plotIntoSquare(filteredData,data["size"],circles)
-        // )
+        startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,indexSquare);
+        // startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,indexSquare,diagonalSquare)
     });
+    // startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreOriginalDataOrder,sortByRed)
+
 });
 

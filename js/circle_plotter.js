@@ -5,10 +5,10 @@
  * @param r
  * @param attrs
  */
-function addCircles_for_update(selector,data,filterLim) {
+function addCircles_for_update(selector) {
 
     window.circles=selector.selectAll("circle")
-        .data(data)
+        .data(window.filteredData)
         .enter()
         .append("circle")
         .attr("cx",function (d) {
@@ -24,7 +24,7 @@ function addCircles_for_update(selector,data,filterLim) {
             var rgbString="rgb("+d.r+','+d.g+","+d.b+")";
             return rgbString
         });
-        // .attr("opacity",0);
+    // .attr("opacity",0);
     return circles
 }
 
@@ -72,7 +72,7 @@ function backToOriginalCircle(){
         .duration(5000)
         .attr("cx",function (d) {
             return d.cx
-         })
+        })
         .attr("cy",function (d) {
             return d.cy
         })
@@ -100,7 +100,10 @@ function calculateRectScale() {
 }
 function diagonalSquare() {
     calculateRectScale();
-    window.circles.transition()
+    window.circles.enter();
+    window.circles.exit();
+    window.circles
+        .transition()
         .duration(5000)
         .attr("cx",function (d,i) {
             return window.rectScale.xScale(i%window.rectScale.x_ct)
@@ -108,4 +111,48 @@ function diagonalSquare() {
         .attr("cy",function (d,i) {
             return window.rectScale.yScale(i%rectScale.y_ct)
         })
+}
+
+/**
+ * so the dot corresponds to index
+ */
+function indexSquare() {
+    calculateRectScale();
+    console.log("index square");
+    window.circles.transition()
+        .duration(5000)
+        .attr("cx",function (d,i) {
+            console.log(i,window.rectScale.xScale(i%window.rectScale.x_ct));
+            return window.rectScale.xScale(i%window.rectScale.x_ct)
+        })
+        .attr("cy",function (d,i) {
+            return window.rectScale.yScale(Math.floor(i/rectScale.x_ct))
+        })
+}
+
+/**
+ * initiate Filtered data
+ */
+function initiateFilteredData() {
+    var filterLim = 20;
+    var filteredData=window.data["data"].filter(function (d) {
+        return arraySum([d.r, d.g, d.b]) > filterLim
+    });
+    return filteredData
+}
+function restoreOriginalDataOrder() {
+    if (window.dataAltered){
+        window.filteredData = initiateFilteredData();
+        window.dataAltered=false
+    }
+}
+
+function sortByRed() {
+    console.log(window.filteredData.slice(0,10));
+    window.filteredData.sort(function (a,b) {
+        return a.r - b.r
+    });
+    window.dataAltered=true;
+    console.log(window.filteredData.slice(0,10));
+    diagonalSquare()
 }

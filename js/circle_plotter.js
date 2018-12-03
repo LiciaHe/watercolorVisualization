@@ -79,7 +79,13 @@ function backToOriginalCircle(){
             return d.cy
         })
 }
-
+function reBindData() {
+    return d3.selectAll("circle")
+        .order()
+        .data(window.data["data"],function (d) {
+            return d.i
+        })
+}
 function calculateRectScale() {
     if(window.rectScale!=undefined){
         return
@@ -101,11 +107,9 @@ function calculateRectScale() {
     window.rectScale={"x_ct":x_ct,"y_ct":y_ct,"xScale":xScale,"yScale":yScale};
 }
 function diagonalSquare() {
+    console.log("Diagonal");
     calculateRectScale();
-    window.circles.data(window.data["data"],function (d) {
-        return d.i
-    });
-    window.circles
+    reBindData()
         .transition()
         .duration(5000)
         .attr("cx",function (d,i) {
@@ -115,13 +119,14 @@ function diagonalSquare() {
             return window.rectScale.yScale(i%rectScale.y_ct)
         })
 }
-
 /**
  * so the dot corresponds to index
  */
 function indexSquare() {
+    console.log("index");
     calculateRectScale();
-    window.circles.transition()
+
+    reBindData().transition()
         .duration(5000)
         .attr("cx",function (d,i) {
             return window.rectScale.xScale(i%window.rectScale.x_ct)
@@ -137,17 +142,20 @@ function indexSquare() {
 
 function restoreOriginalDataOrder() {
     if (window.dataAltered){
+        console.log("Restore");
         window.data["data"].sort(function (a,b) {return a.i-b.i });
         window.dataAltered=false
     }
 }
-
+function restoreToIndex() {
+    restoreOriginalDataOrder();
+    indexSquare()
+}
 function sortByRed() {
     console.log("Red");
-    console.log()
     window.data["data"].sort(function (a,b) {
         return a.r - b.r
     });
     window.dataAltered=true;
-    diagonalSquare()
+    indexSquare()
 }

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d592887-fecf-45c3-81f7-9bdcf3fec431" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data/mini_c (1)_20.json" afterPath="$PROJECT_DIR$/data/mini_c (1)_20.json" />
       <change beforePath="$PROJECT_DIR$/js/circle_plotter.js" afterPath="$PROJECT_DIR$/js/circle_plotter.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
@@ -67,10 +65,41 @@
           <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="594">
-                  <caret line="146" column="16" lean-forward="false" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+                <state relative-caret-position="614">
+                  <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
                   <folding>
                     <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
+                    <element signature="n#!!block;n#addCircles_for_update#0" expanded="false" />
+                    <element signature="e#252#286#0" expanded="false" />
+                    <element signature="e#363#398#0" expanded="false" />
+                    <element signature="e#432#467#0" expanded="false" />
+                    <element signature="e#500#539#0" expanded="false" />
+                    <element signature="e#575#673#0" expanded="false" />
+                    <element signature="n#!!doc;n#organizeTransform#0" expanded="false" />
+                    <element signature="n#!!block;n#organizeTransform#0" expanded="false" />
+                    <element signature="e#1133#1280#0" expanded="false" />
+                    <element signature="e#1284#1376#0" expanded="false" />
+                    <element signature="e#1512#1551#0" expanded="false" />
+                    <element signature="n#!!block;n#initScale#0" expanded="false" />
+                    <element signature="n#!!doc;n#backToOriginalCircle#0" expanded="false" />
+                    <element signature="n#!!block;n#backToOriginalCircle#0" expanded="false" />
+                    <element signature="e#1958#1993#0" expanded="false" />
+                    <element signature="e#2027#2062#0" expanded="false" />
+                    <element signature="n#!!block;n#reBindData#0" expanded="false" />
+                    <element signature="e#2188#2222#0" expanded="false" />
+                    <element signature="n#!!block;n#calculateRectScale#0" expanded="false" />
+                    <element signature="e#2293#2315#0" expanded="false" />
+                    <element signature="n#!!block;n#diagonalSquare#0" expanded="false" />
+                    <element signature="e#3060#3139#0" expanded="false" />
+                    <element signature="e#3175#3247#0" expanded="false" />
+                    <element signature="n#!!doc;n#indexSquare#0" expanded="false" />
+                    <element signature="n#!!block;n#indexSquare#0" expanded="false" />
+                    <element signature="e#3460#3539#0" expanded="false" />
+                    <element signature="e#3575#3666#0" expanded="false" />
+                    <element signature="n#!!block;n#restoreOriginalDataOrder#0" expanded="false" />
+                    <element signature="e#3771#3911#0" expanded="false" />
+                    <element signature="n#!!block;n#sortByRed#0" expanded="false" />
+                    <element signature="e#4085#4117#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -90,11 +119,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+                <state relative-caret-position="526">
+                  <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -160,13 +189,42 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="590">
-                  <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+                <state relative-caret-position="270">
+                  <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
                   <folding>
                     <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
+                    <element signature="n#!!block;n#addCircles_for_update#0" expanded="false" />
+                    <element signature="e#252#286#0" expanded="false" />
+                    <element signature="e#363#398#0" expanded="false" />
+                    <element signature="e#432#467#0" expanded="false" />
+                    <element signature="e#500#539#0" expanded="false" />
+                    <element signature="e#575#673#0" expanded="false" />
+                    <element signature="n#!!doc;n#organizeTransform#0" expanded="false" />
+                    <element signature="n#!!block;n#organizeTransform#0" expanded="false" />
+                    <element signature="e#1133#1280#0" expanded="false" />
+                    <element signature="e#1284#1376#0" expanded="false" />
+                    <element signature="e#1512#1551#0" expanded="false" />
+                    <element signature="n#!!block;n#initScale#0" expanded="false" />
+                    <element signature="n#!!doc;n#backToOriginalCircle#0" expanded="false" />
+                    <element signature="n#!!block;n#backToOriginalCircle#0" expanded="false" />
+                    <element signature="e#1958#1993#0" expanded="false" />
+                    <element signature="e#2027#2062#0" expanded="false" />
+                    <element signature="n#!!block;n#calculateRectScale#0" expanded="false" />
+                    <element signature="e#2293#2315#0" expanded="false" />
+                    <element signature="n#!!block;n#diagonalSquare#0" expanded="false" />
+                    <element signature="e#3060#3139#0" expanded="false" />
+                    <element signature="e#3175#3247#0" expanded="false" />
+                    <element signature="n#!!block;n#indexSquare#0" expanded="false" />
+                    <element signature="e#3460#3539#0" expanded="false" />
+                    <element signature="e#3575#3666#0" expanded="false" />
+                    <element signature="n#!!doc;n#restoreOriginalDataOrder#0" expanded="false" />
+                    <element signature="n#!!block;n#restoreOriginalDataOrder#0" expanded="false" />
+                    <element signature="e#3771#3911#0" expanded="false" />
+                    <element signature="n#!!block;n#sortByRed#0" expanded="false" />
+                    <element signature="e#4085#4117#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -186,8 +244,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fill</find>
-      <find>WIDTH</find>
       <find>scrollM</find>
       <find>styles</find>
       <find>main.css</find>
@@ -216,6 +272,8 @@
       <find>filterEd</find>
       <find>filteredData</find>
       <find>window.data</find>
+      <find>di</find>
+      <find>diagonal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -341,12 +399,12 @@
       <updated>1543710586633</updated>
       <workItem from="1543710588084" duration="14088000" />
       <workItem from="1543807001097" duration="14190000" />
-      <workItem from="1543873817037" duration="4233000" />
+      <workItem from="1543873817037" duration="5404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32511000" />
+    <option name="totallyTimeSpent" value="33682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
@@ -504,6 +562,35 @@
           <caret line="98" column="79" lean-forward="false" selection-start-line="98" selection-start-column="79" selection-end-line="98" selection-end-column="79" />
           <folding>
             <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
+            <element signature="n#!!block;n#addCircles_for_update#0" expanded="false" />
+            <element signature="e#252#286#0" expanded="false" />
+            <element signature="e#363#398#0" expanded="false" />
+            <element signature="e#432#467#0" expanded="false" />
+            <element signature="e#500#539#0" expanded="false" />
+            <element signature="e#575#673#0" expanded="false" />
+            <element signature="n#!!doc;n#organizeTransform#0" expanded="false" />
+            <element signature="n#!!block;n#organizeTransform#0" expanded="false" />
+            <element signature="e#1133#1280#0" expanded="false" />
+            <element signature="e#1284#1376#0" expanded="false" />
+            <element signature="e#1512#1551#0" expanded="false" />
+            <element signature="n#!!block;n#initScale#0" expanded="false" />
+            <element signature="n#!!doc;n#backToOriginalCircle#0" expanded="false" />
+            <element signature="n#!!block;n#backToOriginalCircle#0" expanded="false" />
+            <element signature="e#1958#1993#0" expanded="false" />
+            <element signature="e#2027#2062#0" expanded="false" />
+            <element signature="n#!!block;n#calculateRectScale#0" expanded="false" />
+            <element signature="e#2293#2315#0" expanded="false" />
+            <element signature="n#!!block;n#diagonalSquare#0" expanded="false" />
+            <element signature="e#3060#3139#0" expanded="false" />
+            <element signature="e#3175#3247#0" expanded="false" />
+            <element signature="n#!!block;n#indexSquare#0" expanded="false" />
+            <element signature="e#3460#3539#0" expanded="false" />
+            <element signature="e#3575#3666#0" expanded="false" />
+            <element signature="n#!!doc;n#restoreOriginalDataOrder#0" expanded="false" />
+            <element signature="n#!!block;n#restoreOriginalDataOrder#0" expanded="false" />
+            <element signature="e#3771#3911#0" expanded="false" />
+            <element signature="n#!!block;n#sortByRed#0" expanded="false" />
+            <element signature="e#4085#4117#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,6 +688,35 @@
           <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
+            <element signature="n#!!block;n#addCircles_for_update#0" expanded="false" />
+            <element signature="e#252#286#0" expanded="false" />
+            <element signature="e#363#398#0" expanded="false" />
+            <element signature="e#432#467#0" expanded="false" />
+            <element signature="e#500#539#0" expanded="false" />
+            <element signature="e#575#673#0" expanded="false" />
+            <element signature="n#!!doc;n#organizeTransform#0" expanded="false" />
+            <element signature="n#!!block;n#organizeTransform#0" expanded="false" />
+            <element signature="e#1133#1280#0" expanded="false" />
+            <element signature="e#1284#1376#0" expanded="false" />
+            <element signature="e#1512#1551#0" expanded="false" />
+            <element signature="n#!!block;n#initScale#0" expanded="false" />
+            <element signature="n#!!doc;n#backToOriginalCircle#0" expanded="false" />
+            <element signature="n#!!block;n#backToOriginalCircle#0" expanded="false" />
+            <element signature="e#1958#1993#0" expanded="false" />
+            <element signature="e#2027#2062#0" expanded="false" />
+            <element signature="n#!!block;n#calculateRectScale#0" expanded="false" />
+            <element signature="e#2293#2315#0" expanded="false" />
+            <element signature="n#!!block;n#diagonalSquare#0" expanded="false" />
+            <element signature="e#3060#3139#0" expanded="false" />
+            <element signature="e#3175#3247#0" expanded="false" />
+            <element signature="n#!!block;n#indexSquare#0" expanded="false" />
+            <element signature="e#3460#3539#0" expanded="false" />
+            <element signature="e#3575#3666#0" expanded="false" />
+            <element signature="n#!!doc;n#restoreOriginalDataOrder#0" expanded="false" />
+            <element signature="n#!!block;n#restoreOriginalDataOrder#0" expanded="false" />
+            <element signature="e#3771#3911#0" expanded="false" />
+            <element signature="n#!!block;n#sortByRed#0" expanded="false" />
+            <element signature="e#4085#4117#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -717,21 +833,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
+            <element signature="n#!!block;n#addCircles_for_update#0" expanded="false" />
+            <element signature="e#252#286#0" expanded="false" />
+            <element signature="e#363#398#0" expanded="false" />
+            <element signature="e#432#467#0" expanded="false" />
+            <element signature="e#500#539#0" expanded="false" />
+            <element signature="e#575#673#0" expanded="false" />
+            <element signature="n#!!doc;n#organizeTransform#0" expanded="false" />
+            <element signature="n#!!block;n#organizeTransform#0" expanded="false" />
+            <element signature="e#1133#1280#0" expanded="false" />
+            <element signature="e#1284#1376#0" expanded="false" />
+            <element signature="e#1512#1551#0" expanded="false" />
+            <element signature="n#!!block;n#initScale#0" expanded="false" />
+            <element signature="n#!!doc;n#backToOriginalCircle#0" expanded="false" />
+            <element signature="n#!!block;n#backToOriginalCircle#0" expanded="false" />
+            <element signature="e#1958#1993#0" expanded="false" />
+            <element signature="e#2027#2062#0" expanded="false" />
+            <element signature="n#!!block;n#calculateRectScale#0" expanded="false" />
+            <element signature="e#2293#2315#0" expanded="false" />
+            <element signature="n#!!block;n#diagonalSquare#0" expanded="false" />
+            <element signature="e#3060#3139#0" expanded="false" />
+            <element signature="e#3175#3247#0" expanded="false" />
+            <element signature="n#!!block;n#indexSquare#0" expanded="false" />
+            <element signature="e#3460#3539#0" expanded="false" />
+            <element signature="e#3575#3666#0" expanded="false" />
+            <element signature="n#!!doc;n#restoreOriginalDataOrder#0" expanded="false" />
+            <element signature="n#!!block;n#restoreOriginalDataOrder#0" expanded="false" />
+            <element signature="e#3771#3911#0" expanded="false" />
+            <element signature="n#!!block;n#sortByRed#0" expanded="false" />
+            <element signature="e#4085#4117#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="146" column="16" lean-forward="false" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="526">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

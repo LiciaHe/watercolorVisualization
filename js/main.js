@@ -49,9 +49,9 @@ d3.json(baseLoc+fileName,function (error,data) {
         takeMeWithYou(svgId, "panel_1", window.innerHeight / 2, controller);
         transparentToZero(imgId, "panel_2", 0, window.innerHeight / 2, controller);
         transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
-        startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,indexSquare);
-        startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,indexSquare,diagonalSquare);
-        startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreOriginalDataOrder,sortByRed)
+        startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,diagonalSquare);
+        startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,diagonalSquare,indexSquare);
+        startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreToIndex,sortByRed)
     });
 
 

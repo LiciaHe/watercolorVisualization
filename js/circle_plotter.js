@@ -6,7 +6,7 @@
  * @param attrs
  */
 function addCircles_for_update(selector,data,filterLim) {
-    var circles=selector.selectAll("circle")
+    window.circles=selector.selectAll("circle")
         .data(data)
         .enter()
         .append("circle")
@@ -23,6 +23,7 @@ function addCircles_for_update(selector,data,filterLim) {
             var rgbString="rgb("+d.r+','+d.g+","+d.b+")";
             return rgbString
         });
+        // .attr("opacity",0);
     return circles
 }
 

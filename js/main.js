@@ -24,24 +24,33 @@ var sepNames=getFileName(fileName);
 addTextToPanel(panels);
 d3.json(baseLoc+fileName,function (error,data) {
     if (error) throw error;
-    var svg_width=$("#"+svgId+"_div").width();
-    var svg_g=createSvg_withoutMargin(svgId+"_div",svg_width,innerHeight,svgId);
+    var svg_width = $("#" + svgId + "_div").width();
+    var svg_g = createSvg_withoutMargin(svgId + "_div", svg_width, innerHeight, svgId);
 
-    var filterLim=20;
-    var filteredData=data["data"].filter(function (d) { return arraySum([d.r,d.g,d.b])>filterLim });
+    var filterLim = 20;
+    var filteredData = data["data"].filter(function (d) {
+        return arraySum([d.r, d.g, d.b]) > filterLim
+    });
     // svg_div.append('<img src="'+(baseLoc+sepNames[0].slice(0,sepNames[0].length-3)+".jpg")+'">');
-    var imgLoc=baseLoc+sepNames[0].slice(0,sepNames[0].length-3)+".jpg";
+    var imgLoc = baseLoc + sepNames[0].slice(0, sepNames[0].length - 3) + ".jpg";
+    var imgId = "original_img";
     svg_g.append("image")
-        .attrs({"xlink:href":imgLoc,"x":0,"y":0,"width":svg_width,"height":window.innerHeight});
-    // var circles=addCircles_for_update(svg_g,filteredData,filterLim);
-    // organizeTransform(svg_g,data,svgId+"_div");
-    var controller=initController();
+        .attrs({"id": imgId, "xlink:href": imgLoc, "x": 0, "y": 0, "width": svg_width, "height": "100%"});
+    var circle_g=svg_g.append("g")
+        .attr("id","circle_g")
+        .style("opacity",0);
+    var circles = addCircles_for_update(circle_g, filteredData, filterLim);
+    organizeTransform(svg_g, data, svgId + "_div");
+    var controller = initController();
     $(function () {
-        takeMeWithYou(svgId,"panel_0",window.innerHeight/2,controller)
-    })
-
-    // initScale(data["size"]);
-
-    // plotIntoSquare(filteredData,data["size"],circles)
+        takeMeWithYou(svgId, "panel_0", window.innerHeight / 2, controller);
+        transparentToZero(imgId, "panel_1", 0, window.innerHeight / 2, controller);
+        transparentFromZero("circle_g", "panel_1", 0, window.innerHeight / 2, controller)
+        //
+        // initScale(data["size"]);
+        // //
+        // plotIntoSquare(filteredData,data["size"],circles)
+        // )
+    });
 });
 

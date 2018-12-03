@@ -30,5 +30,6 @@ function createAllPanels(selecter,panelCount) {
 function addTextToPanel(panels) {
     //# 1 intro
     //here's an watercolor I drew
-    panels[0].append("<span class='vcenter'><h1>Here's an abstract watercolor painting.</h1></span>")
+    panels[0].append("<span class='vcenter'><h1>Here's an abstract watercolor painting.</h1></span>");
+    panels[1].append("<h1 class='vcenter'>To reduce complexity for web display and animation, let's convert it into colored dots.</h1>")
 }

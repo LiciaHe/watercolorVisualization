@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d592887-fecf-45c3-81f7-9bdcf3fec431" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/mini_c (1).jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change beforePath="$PROJECT_DIR$/js/circle_plotter.js" afterPath="$PROJECT_DIR$/js/circle_plotter.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/js/scroll_magic_utils.js" afterPath="$PROJECT_DIR$/js/scroll_magic_utils.js" />
       <change beforePath="$PROJECT_DIR$/js/titleAndPanels.js" afterPath="$PROJECT_DIR$/js/titleAndPanels.js" />
-      <change beforePath="$PROJECT_DIR$/js/utils.js" afterPath="$PROJECT_DIR$/js/utils.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +24,18 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2844">
-                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <state relative-caret-position="288">
+                  <caret line="29" column="96" lean-forward="false" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="96" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="scroll_magic_utils.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/scroll_magic_utils.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="322">
+                  <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -47,8 +54,8 @@
           <file leaf-file-name="titleAndPanels.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/titleAndPanels.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+                <state relative-caret-position="918">
+                  <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -58,8 +65,11 @@
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="182">
-                  <caret line="30" column="100" lean-forward="true" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
-                  <folding />
+                  <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+                  <folding>
+                    <marker date="1543817086534" expanded="true" signature="874:2200" ph="{...}" />
+                    <marker date="1543817086534" expanded="true" signature="1817:1977" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -77,14 +87,14 @@
           <file leaf-file-name="circle_plotter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1548">
-                  <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+                <state relative-caret-position="-2160">
+                  <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
                   <folding>
                     <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
-                    <element signature="e#311#346#0" expanded="false" />
-                    <element signature="e#380#415#0" expanded="false" />
-                    <element signature="e#448#487#0" expanded="false" />
-                    <element signature="e#523#621#0" expanded="false" />
+                    <element signature="e#314#349#0" expanded="false" />
+                    <element signature="e#383#418#0" expanded="false" />
+                    <element signature="e#451#490#0" expanded="false" />
+                    <element signature="e#526#624#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -107,8 +117,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+                <state relative-caret-position="243">
+                  <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -171,10 +181,10 @@
                   <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
                   <folding>
                     <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
-                    <element signature="e#311#346#0" expanded="false" />
-                    <element signature="e#380#415#0" expanded="false" />
-                    <element signature="e#448#487#0" expanded="false" />
-                    <element signature="e#523#621#0" expanded="false" />
+                    <element signature="e#314#349#0" expanded="false" />
+                    <element signature="e#383#418#0" expanded="false" />
+                    <element signature="e#451#490#0" expanded="false" />
+                    <element signature="e#526#624#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -203,9 +213,15 @@
       <find>range</find>
       <find>b</find>
       <find>indicator</find>
-      <find>organize</find>
       <find>width</find>
       <find>img-</find>
+      <find>responsive</find>
+      <find>respon</find>
+      <find>organize</find>
+      <find>TWEENm</find>
+      <find>addCirclesFor</find>
+      <find>addCircles</find>
+      <find>addCir</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,11 +233,11 @@
         <option value="$PROJECT_DIR$/js/d3_views.js" />
         <option value="$PROJECT_DIR$/js/generic_grid_manipulation.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/scroll_magic_utils.js" />
-        <option value="$PROJECT_DIR$/js/circle_plotter.js" />
         <option value="$PROJECT_DIR$/js/utils.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/titleAndPanels.js" />
+        <option value="$PROJECT_DIR$/js/circle_plotter.js" />
+        <option value="$PROJECT_DIR$/js/scroll_magic_utils.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -329,12 +345,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543710586633</updated>
       <workItem from="1543710588084" duration="14088000" />
-      <workItem from="1543807001097" duration="3898000" />
+      <workItem from="1543807001097" duration="8477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17986000" />
+    <option name="totallyTimeSpent" value="22565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
@@ -416,7 +432,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1543817086534" expanded="true" signature="874:2200" ph="{...}" />
+            <marker date="1543817086534" expanded="true" signature="1817:1977" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -462,10 +481,10 @@
           <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
-            <element signature="e#311#346#0" expanded="false" />
-            <element signature="e#380#415#0" expanded="false" />
-            <element signature="e#448#487#0" expanded="false" />
-            <element signature="e#523#621#0" expanded="false" />
+            <element signature="e#314#349#0" expanded="false" />
+            <element signature="e#383#418#0" expanded="false" />
+            <element signature="e#451#490#0" expanded="false" />
+            <element signature="e#526#624#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -503,14 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2844">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
@@ -537,38 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/text_manipulation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scroll_magic_utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
-            <element signature="e#311#346#0" expanded="false" />
-            <element signature="e#380#415#0" expanded="false" />
-            <element signature="e#448#487#0" expanded="false" />
-            <element signature="e#523#621#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -585,18 +564,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/titleAndPanels.js">
+    <entry file="file://$PROJECT_DIR$/js/text_manipulation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="204">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="96" lean-forward="false" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/circle_plotter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2160">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc;n#addCircles_for_update#0" expanded="false" />
+            <element signature="e#314#349#0" expanded="false" />
+            <element signature="e#383#418#0" expanded="false" />
+            <element signature="e#451#490#0" expanded="false" />
+            <element signature="e#526#624#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        <state relative-caret-position="182">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <marker date="1543817086534" expanded="true" signature="874:2200" ph="{...}" />
+            <marker date="1543817086534" expanded="true" signature="1817:1977" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scroll_magic_utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/titleAndPanels.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding />
         </state>
       </provider>

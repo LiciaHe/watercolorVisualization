@@ -52,7 +52,7 @@ d3.json(baseLoc+fileName,function (error,data) {
         takeMeWithYou(svgId, "panel_1", window.innerHeight / 2, controller);
         transparentToZero(imgId, "panel_2", 0, window.innerHeight / 2, controller);
         transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
-        startAndEnd("circle_g","panel_3",0,window.innerHeight / 4,controller,backToOriginalCircle,plotIntoSquare)
+        startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,diagonalSquare)
 
         //
         // initScale(data["size"]);

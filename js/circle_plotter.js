@@ -78,10 +78,11 @@ function backToOriginalCircle(){
         })
 }
 
-function plotIntoSquare() {
-    console.log("square");
+function calculateRectScale() {
+    if(window.rectScale!=undefined){
+        return
+    }
     var size=window.data["size"];
-
     var r=window.filteredData[0]["radius"];
     var x_ct=Math.floor(size[0]/(2*r));
     var y_ct=Math.ceil(window.filteredData.length/x_ct);
@@ -95,13 +96,16 @@ function plotIntoSquare() {
         .range(yRange)
         .domain(range(y_ct))
         .padding(0);
-    // console.log(x_ct,xScale.domain(),xScale(50));
+    window.rectScale={"x_ct":x_ct,"y_ct":y_ct,"xScale":xScale,"yScale":yScale};
+}
+function diagonalSquare() {
+    calculateRectScale();
     window.circles.transition()
         .duration(5000)
         .attr("cx",function (d,i) {
-            return xScale(i%x_ct)
+            return window.rectScale.xScale(i%window.rectScale.x_ct)
         })
         .attr("cy",function (d,i) {
-            return yScale(i%y_ct)
+            return window.rectScale.yScale(i%rectScale.y_ct)
         })
 }

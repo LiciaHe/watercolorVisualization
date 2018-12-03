@@ -70,7 +70,7 @@ function enterAndLeave(elementId,triggerId,offset,duration,controller,startFunct
         })
         .on("leave",function () {
             endFunction()
-        })
+        });
     return scene
 }
 function startAndEnd(elementId,triggerId,offset,duration,controller,startFunction,endFunction) {

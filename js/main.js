@@ -14,52 +14,29 @@ createTitlePanel(content_container);
 
 var exp_div=addDiv(addDiv(content_expDiv,"exp_div",additionalClass="col-3 gray_bg"),"exp_container",additionalClass="container-fluid");
 
-
 var svg_div=addDiv(content_container,svgId+"_div",additionalClass="row h-100");
 
 var panels=createAllPanels(exp_div,panelCt);
+addTextToPanel(panels);
+
 var footer=addDiv($("body"),"footer","container-fluid h-100 dark_gray_bg light_font");
 updateFooter(footer);
 
 
-var baseLoc="data/";
-var fileName="mini_c (1)_20.json";
+window.baseLoc="data/";
+window.selectedId=1;
+var fileName=makeName(window.selectedId);
 var sepNames=getFileName(fileName);
-addTextToPanel(panels);
-d3.json(baseLoc+fileName,function (error,data) {
-    if (error) throw error;
-    window.data=data;
+window.fileNameRange=[1,100];
 
-    var svg_width = $("#" + svgId + "_div").width();
-    var svg_g = createSvg_withoutMargin(svgId + "_div", svg_width, innerHeight, svgId);
+window.svg_width = $("#" + svgId + "_div").width();
+window.svg_g = createSvg_withoutMargin(svgId + "_div", window.svg_width, window.innerHeight, window.svgId);
+window.imgId = "original_img";
+window.img_g=d3.select("#"+window.svgId)
+    .append("g")
+    .attr("id",imgId+"_g");
 
-    window.dataAltered=false;
-    var imgLoc = baseLoc + sepNames[0].slice(0, sepNames[0].length - 3) + ".jpg";
-    var imgId = "original_img";
-    d3.select("#"+svgId)
-        .append("g")
-        .append("image")
-        .attrs({"id": imgId, "xlink:href": imgLoc, "x": 0, "y": 0, "width": svg_width, "height": "100%"});
 
-    var circle_g=svg_g.append("g")
-        .attr("id","circle_g")
-        .style("opacity",0);
-    addCircles_for_update(circle_g);
-    organizeTransform(svg_g, data, svgId + "_div");
-    var controller = initController();
-    $(function () {
-        stay_for_a_while(svgId, "panel_1", window.innerHeight / 2,window.innerHeight*(panelCt-2),controller);
-        transparentToZero(imgId, "panel_2", 0, window.innerHeight / 2, controller);
-        transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
-        startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,diagonalSquare);
-        startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,diagonalSquare,indexSquare);
-        startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreToIndex,sortByRed);
-        startAndEnd("circle_g","panel_6",-window.innerHeight/4,window.innerHeight / 4,controller,removeHighlight,highlightWhiteDot);
-        startAndEnd("circle_g","panel_7",-window.innerHeight/4,window.innerHeight / 4,controller,removeHighlightAndBackToRedSort,sortByRGBsum);
-        var endScene=transparentToZero("circle_g", "panel_8", -window.innerHeight/4, window.innerHeight, controller);
-        endScene.on("leave",function () {
-            this.refresh()
-        })
-    });
-});
+addImageAndFullProcedure(window.baseLoc,fileName,sepNames);
+
 

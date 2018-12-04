@@ -1,4 +1,5 @@
 
+/////
 function createMainAndEdge() {
     var mainContainer=addDiv($('body'),"main_container","container-fluid");
     // var edge=addDiv(mainContainer,"edge",'row h-100');
@@ -50,7 +51,12 @@ function addTextToPanel(panels) {
 }
 function updateFooter(footer) {
     addDiv(footer,"footer_spacer","row h-20");
-    var container=addDiv(footer,"footer_text","row h-60");
+    var container=addDiv(footer,"footer_text","row h-40");
     addBigText(container, "Have fun experimenting!");
     addBigText(container, "To see more examples, click on the shuffle button below");
+    var btn_div=addDiv(addDiv(footer,"btn_div","row h-40"),"btn_col","col align-self-center");
+    addButton(btn_div,"shuffle_btn","btn-light btn-lg","Get A New Piece of Watercolor"," large_font");
+    $("#shuffle_btn").click(function () {
+        switchNewImage();
+    })
 }

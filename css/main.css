@@ -28,3 +28,6 @@ body{font-family: 'Gamja Flower', cursive;}
     stroke-width:5px;
     stroke: #49e946
 }
+.large_font{
+    min-font-size: 50;
+}

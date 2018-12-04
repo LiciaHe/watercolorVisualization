@@ -58,10 +58,6 @@ function organizeTransform(svg_g,data,divId) {
 /*
 by default, create linear scales
  */
-function initScale(size) {
-    window.x_Scale=d3.scaleLinear().range([0,size[0]]);
-    window.y_scale=d3.scaleLinear().range([0,size[1]]);
-}
 
 /**
  * assume data is filtered into desired order
@@ -107,7 +103,7 @@ function calculateRectScale() {
     window.rectScale={"x_ct":x_ct,"y_ct":y_ct,"xScale":xScale,"yScale":yScale};
 }
 function diagonalSquare() {
-    console.log("Diagonal");
+    // console.log("Diagonal");
     calculateRectScale();
     reBindData()
         .transition()
@@ -123,7 +119,7 @@ function diagonalSquare() {
  * so the dot corresponds to index
  */
 function indexSquare() {
-    console.log("index");
+    // console.log("index");
     calculateRectScale();
 
     reBindData().transition()
@@ -139,10 +135,9 @@ function indexSquare() {
 /**
  * initiate Filtered data
  */
-
 function restoreOriginalDataOrder() {
     if (window.dataAltered){
-        console.log("Restore");
+        // console.log("Restore");
         window.data["data"].sort(function (a,b) {return a.i-b.i });
         window.dataAltered=false
     }
@@ -152,7 +147,7 @@ function restoreToIndex() {
     indexSquare()
 }
 function sortByRed() {
-    console.log("Red");
+    // console.log("Red");
     window.data["data"].sort(function (a,b) {
         return a.r - b.r
     });

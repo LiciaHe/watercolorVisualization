@@ -45,7 +45,8 @@ function takeMeWithYou(pinId,triggerId,offset,controller) {
 function transparentToZero(elementId,triggerId,offset,duration,controller) {
 
     var opacityTween=TweenMax.fromTo("#"+elementId,1,{opacity:1},{opacity:0});
-    return tweenScene(elementId,triggerId,offset,duration,controller,opacityTween).addIndicators()
+    return tweenScene(elementId,triggerId,offset,duration,controller,opacityTween);
+    // .addIndicators()
 }
 function transparentFromZero(elementId,triggerId,offset,duration,controller) {
     var opacityTween=TweenMax.fromTo("#"+elementId,1,{opacity:0},{opacity:1});

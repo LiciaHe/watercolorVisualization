@@ -28,6 +28,9 @@ function download(id) {
         element.click();
     }
 }
+function addButton(selector,btn_id,additionalClass,text,span_class) {
+    selector.append('<span class="input-group-btn '+span_class+'"><button id="'+btn_id+'" class="btn '+additionalClass+'" type="button">'+text+'</button></span>')
+}
 function addDownloadButton(selector,svgId) {
     selector.append("<span class=\"input-group-btn\">\n" +
         "        <button id=\"download\" class=\"btn btn-secondary\" type=\"button\">Download</button></span>");
@@ -35,6 +38,7 @@ function addDownloadButton(selector,svgId) {
         download(svgId)
     });
 }
+
 function sample(arr, size) {
     /**
      * ref https://stackoverflow.com/questions/11935175/sampling-a-random-subset-from-an-array

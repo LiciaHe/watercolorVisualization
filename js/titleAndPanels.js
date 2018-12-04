@@ -44,5 +44,7 @@ function addTextToPanel(panels) {
     panels[3].append("<h1 class='vcenter'>Here's a way to transform the circle into a rectangle.</h1>");
     panels[4].append("<h1 class='vcenter'>And another way.</h1>");
     panels[5].append("<h1 class='vcenter'>Fun things start to happen when we sort these dots. Let's see sort by how RED the dot is.</h1>");
+    panels[6].append("<h1>Because red + green +blue = white in the RGB world,you will see some 'white' dots in the most Red area </h1>")
+
 
 }

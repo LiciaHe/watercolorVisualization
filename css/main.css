@@ -16,3 +16,7 @@ body{font-family: 'Gamja Flower', cursive;}
 .gray_bg{
     background-color: #f4f3ef;
 }
+.highlight_dot{
+    stroke-width:5px;
+    stroke: #49e946
+}

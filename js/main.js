@@ -51,7 +51,8 @@ d3.json(baseLoc+fileName,function (error,data) {
         transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
         startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,diagonalSquare);
         startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,diagonalSquare,indexSquare);
-        startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreToIndex,sortByRed)
+        startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreToIndex,sortByRed);
+        startAndEnd("circle_g","panel_6",-window.innerHeight/4,window.innerHeight / 4,controller,removeHighlight,highlightWhiteDot)
     });
 
 

@@ -159,3 +159,17 @@ function sortByRed() {
     window.dataAltered=true;
     indexSquare()
 }
+function removeHighlight() {
+    d3.selectAll("circle")
+        .attr("class","")
+}
+function addHighlight(selector) {
+    selector.attr("class","highlight_dot")
+}
+function highlightWhiteDot() {
+    var whiteDotInRed=d3.selectAll("circle")
+        .data(window.data["data"].filter(function (value) { return value.r>200 && value.r+value.g+value.b>200*3 }),function (d) {
+            return d.i
+        });
+    addHighlight(whiteDotInRed)
+}

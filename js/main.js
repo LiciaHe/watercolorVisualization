@@ -5,8 +5,7 @@ var svgId="main_svg";
 
 var topDiv=createMainAndEdge();
 
-
-var panelCt=7;
+var panelCt=9;
 var content_expDiv=addDiv(topDiv[0],"content_exp",additionalClass="row");
 content_expDiv.height(panelCt*window.innerHeight);
 
@@ -19,6 +18,9 @@ var exp_div=addDiv(addDiv(content_expDiv,"exp_div",additionalClass="col-3 gray_b
 var svg_div=addDiv(content_container,svgId+"_div",additionalClass="row h-100");
 
 var panels=createAllPanels(exp_div,panelCt);
+var footer=addDiv($("body"),"footer","container-fluid h-100 dark_gray_bg light_font");
+updateFooter(footer);
+
 
 var baseLoc="data/";
 var fileName="mini_c (1)_20.json";
@@ -46,15 +48,18 @@ d3.json(baseLoc+fileName,function (error,data) {
     organizeTransform(svg_g, data, svgId + "_div");
     var controller = initController();
     $(function () {
-        takeMeWithYou(svgId, "panel_1", window.innerHeight / 2, controller);
+        stay_for_a_while(svgId, "panel_1", window.innerHeight / 2,window.innerHeight*(panelCt-2),controller);
         transparentToZero(imgId, "panel_2", 0, window.innerHeight / 2, controller);
         transparentFromZero("circle_g", "panel_2", 0, window.innerHeight / 2, controller);
         startAndEnd("circle_g","panel_3",-window.innerHeight/4,window.innerHeight / 4,controller,backToOriginalCircle,diagonalSquare);
         startAndEnd("circle_g","panel_4",-window.innerHeight/4,window.innerHeight / 4,controller,diagonalSquare,indexSquare);
         startAndEnd("circle_g","panel_5",-window.innerHeight/4,window.innerHeight / 4,controller,restoreToIndex,sortByRed);
-        startAndEnd("circle_g","panel_6",-window.innerHeight/4,window.innerHeight / 4,controller,removeHighlight,highlightWhiteDot)
+        startAndEnd("circle_g","panel_6",-window.innerHeight/4,window.innerHeight / 4,controller,removeHighlight,highlightWhiteDot);
+        startAndEnd("circle_g","panel_7",-window.innerHeight/4,window.innerHeight / 4,controller,removeHighlightAndBackToRedSort,sortByRGBsum);
+        var endScene=transparentToZero("circle_g", "panel_8", -window.innerHeight/4, window.innerHeight, controller);
+        endScene.on("leave",function () {
+            this.refresh()
+        })
     });
-
-
 });
 

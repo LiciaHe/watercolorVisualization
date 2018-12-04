@@ -1,6 +1,7 @@
 .h-10{height:10%}
 .h-15{height:15%}
 .h-20{height:20%}
+.h-40{height:40%}
 .h-60{height:60%}
 .h-80{height:80%}
 .h-85{height:85%}
@@ -16,6 +17,13 @@ body{font-family: 'Gamja Flower', cursive;}
 .gray_bg{
     background-color: #f4f3ef;
 }
+.dark_gray_bg{
+    background-color: #4f4e4b;
+}
+.light_font{
+    color: #fdfbf1
+}
+
 .highlight_dot{
     stroke-width:5px;
     stroke: #49e946

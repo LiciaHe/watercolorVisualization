@@ -1,6 +1,6 @@
 
 function createMainAndEdge() {
-    var mainContainer=addDiv($('body'),"main_container","container-fluid h-100");
+    var mainContainer=addDiv($('body'),"main_container","container-fluid");
     // var edge=addDiv(mainContainer,"edge",'row h-100');
     // var edgeContainer=addDiv(edge,"edge_container",'container h-100');
     return [mainContainer]
@@ -44,7 +44,13 @@ function addTextToPanel(panels) {
     panels[3].append("<h1 class='vcenter'>Here's a way to transform the circle into a rectangle.</h1>");
     panels[4].append("<h1 class='vcenter'>And another way.</h1>");
     panels[5].append("<h1 class='vcenter'>Fun things start to happen when we sort these dots. Let's see sort by how RED the dot is.</h1>");
-    panels[6].append("<h1>Because red + green +blue = white in the RGB world,you will see some 'white' dots in the most Red area </h1>")
-
-
+    panels[6].append("<h1>Because red + green +blue = white in the RGB world, you will see some 'white' dots in the most Red area. </h1>");
+    panels[7].append("<h1>Sorting by the sum of RGB gives us a different image.</h1>");
+    panels[8].append("<h1>There are really infinite ways to use these information, and here are some examples</h1>")
+}
+function updateFooter(footer) {
+    addDiv(footer,"footer_spacer","row h-20");
+    var container=addDiv(footer,"footer_text","row h-60");
+    addBigText(container, "Have fun experimenting!");
+    addBigText(container, "To see more examples, click on the shuffle button below");
 }

@@ -167,9 +167,21 @@ function addHighlight(selector) {
     selector.attr("class","highlight_dot")
 }
 function highlightWhiteDot() {
+    var redLim=200;
     var whiteDotInRed=d3.selectAll("circle")
-        .data(window.data["data"].filter(function (value) { return value.r>200 && value.r+value.g+value.b>200*3 }),function (d) {
+        .data(window.data["data"].filter(function (value) { return value.r>redLim && value.r+value.g+value.b>redLim*3 }),function (d) {
             return d.i
         });
     addHighlight(whiteDotInRed)
+}
+function removeHighlightAndBackToRedSort() {
+    removeHighlight();
+    sortByRed();
+}
+function sortByRGBsum() {
+    window.data["data"].sort(function (a,b) {
+        return (a.r+a.g+a.b) - (b.r+b.g+b.b)
+    });
+    window.dataAltered=true;
+    indexSquare();
 }
